@@ -52,7 +52,7 @@ public void one_way_booking_flight(Map<String, String> userDetails) {
 public void  round_way_booking_flight(Map<String, String> userDetails) {
 	rtn_roundtrip.click();
 	booking_flight(userDetails);
-	ddl_toPort.selectByVisibleText("To");
+	ddl_fromPort.selectByVisibleText(userDetails.get("From"));
 	
 }
 
