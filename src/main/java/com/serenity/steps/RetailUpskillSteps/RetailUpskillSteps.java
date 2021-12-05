@@ -17,15 +17,16 @@ public class RetailUpskillSteps extends CommonStep {
 		
 	}
 
+	@Step
 	public void Register(String userid, String password) throws InterruptedException {
 		System.out.println("registration in progress");
 		//fb.wait(100);
 		fb.accounticon.click();
 		System.out.println("after click");
 		
-		fb.wait(3);
-		fb.registerbtn.click();
-		fb.wait(3);
+		//fb.wait(3);
+		fb.registerbtn.waitUntilClickable().click();
+		//fb.wait(3);
 		System.out.println("registration page");
 		fb.firstname.sendKeys(userid);
 		fb.lastname.sendKeys(userid);
@@ -45,12 +46,13 @@ public class RetailUpskillSteps extends CommonStep {
 		
 	}
 
+	@Step
 	public void Login(String userid, String password) throws InterruptedException {
 		System.out.println("registration in progress");
-		fb.wait(100);
+		//fb.wait(100);
 		fb.accounticon.click();
 		
-		fb.wait(3);
+		//fb.wait(3);
 		fb.email.sendKeys(userid);
 		fb.password.sendKeys(password);
 		fb.login.click();
@@ -58,14 +60,16 @@ public class RetailUpskillSteps extends CommonStep {
 		
 	}
 
+	@Step
 	public boolean registrationsuccess() throws InterruptedException {
-		fb.wait(3);
+		//fb.wait(3);
 		boolean registered= fb.congratulations.isVisible();
 		return registered;
 	}
 
+	@Step
 	public Object loginsuccess() throws InterruptedException {
-		fb.wait(3);
+		//fb.wait(3);
 		boolean login= fb.congratulations.isVisible();
 		return login;
 	}
