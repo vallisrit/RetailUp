@@ -3,48 +3,59 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-29T05:50:55.305Z",
+        "start_timestamp": "2021-12-05T14:46:57.447Z",
         "line": 4,
-        "name": "Search One Way Trip on Make My Trip",
+        "name": "Retail Upskill Register",
         "description": "",
-        "id": "make-my-trip-search;search-one-way-trip-on-make-my-trip",
+        "id": "retail-upskill-register-and-login;retail-upskill-register",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 14293129400,
+              "duration": 13849000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I am on Make my trip",
+            "name": "I am on \" http://retailm1.upskills.in/\"",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_am_on_make_my_trip()"
+              "arguments": [
+                {
+                  "val": "\" http://retailm1.upskills.in/\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_am_on_url(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cli data-cy\u003d\"oneWayTrip\" class\u003d\"selected\"\u003e...\u003c/li\u003e is not clickable at point (75, 183). Other element would receive the click: \u003cdiv data-cy\u003d\"outsideModal\" class\u003d\"loginModal displayBlock modalLogin dynHeight personal \"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-3C821FM5\u0027, ip: \u0027192.168.1.7\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\VALLIS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 076dd68c5a315a53a554e553e90e097c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps.searchOneWay(FlightsearchSteps.java:22)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchOneWay$accessor$yKhjQoGf(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)\r\n\tat net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchOneWay(Unknown Source)\r\n\tat com.serenity.stepDefinations.makemytrip.makemytripStepDefination.I_perform_one_way_trip(makemytripStepDefination.java:31)\r\n\tat ✽.I perform one way trip search(file:///C:/Users/VallisriTolety/git/Serenity-template/features/MakeMyTrip.feature:6)\r\n",
-              "duration": 1648207800,
-              "status": "failed"
+              "duration": 12136000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "I perform one way trip search",
+            "name": "I perform \"Register\" to the website",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.I_perform_one_way_trip(io.cucumber.datatable.DataTable)"
+              "arguments": [
+                {
+                  "val": "\"Register\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(java.lang.String,io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "From",
-                  "Delhi"
+                  "User",
+                  "automationtvs6@gmail.com"
                 ]
               },
               {
                 "cells": [
-                  "To",
-                  "Bangalore"
+                  "password",
+                  "**milk123"
                 ]
               }
             ],
@@ -52,80 +63,79 @@
           },
           {
             "result": {
-              "duration": 4986100,
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError: expected:\u003cfalse\u003e but was:\u003ctrue\u003e\n\tat org.testng.AssertJUnit.fail(AssertJUnit.java:65)\n\tat org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:468)\n\tat org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)\n\tat org.testng.AssertJUnit.assertEquals(AssertJUnit.java:230)\n\tat org.testng.AssertJUnit.assertEquals(AssertJUnit.java:240)\n\tat com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_successfully_registerd(RetailUpskillSetpDefination.java:45)\n\tat ✽.I successfully registerd(file:///Users/riyaanghosh/git/RetailUp/features/RetailUpskill.feature:9)\n",
+              "duration": 10406000000,
+              "status": "failed"
             },
             "line": 9,
-            "name": "Search results should display for one way trip",
+            "name": "I successfully registerd",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.Search_results_should_display_one_way(io.cucumber.datatable.DataTable)"
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_successfully_registerd()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "From",
-                  "Delhi"
-                ]
-              },
-              {
-                "cells": [
-                  "To",
-                  "Bangalore"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tripsearch"
+            "name": "@retupskill"
           }
         ]
       },
       {
-        "start_timestamp": "2021-11-29T05:51:11.914Z",
-        "line": 13,
-        "name": "Search round Way Trip on Make My Trip",
+        "start_timestamp": "2021-12-05T14:47:34.506Z",
+        "line": 11,
+        "name": "Retail Upskill Login",
         "description": "",
-        "id": "make-my-trip-search;search-round-way-trip-on-make-my-trip",
+        "id": "retail-upskill-register-and-login;retail-upskill-login",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5301515900,
+              "duration": 10560000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I am on Make my trip",
+            "line": 12,
+            "name": "I am on \" http://retailm1.upskills.in/\"",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_am_on_make_my_trip()"
+              "arguments": [
+                {
+                  "val": "\" http://retailm1.upskills.in/\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_am_on_url(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cli data-cy\u003d\"roundTrip\" class\u003d\"\"\u003e...\u003c/li\u003e is not clickable at point (198, 183). Other element would receive the click: \u003cdiv data-cy\u003d\"outsideModal\" class\u003d\"loginModal displayBlock modalLogin dynHeight personal \"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-3C821FM5\u0027, ip: \u0027192.168.1.7\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\VALLIS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 78342da7a315b1f537299110eb32bf13\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps.searchRoundTrip(FlightsearchSteps.java:35)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchRoundTrip$accessor$yKhjQoGf(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)\r\n\tat net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)\r\n\tat com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchRoundTrip(Unknown Source)\r\n\tat com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_perform_round_way_trip_search(makemytripStepDefination.java:53)\r\n\tat ✽.I perform round way trip search(file:///C:/Users/VallisriTolety/git/Serenity-template/features/MakeMyTrip.feature:15)\r\n",
-              "duration": 1434771500,
+              "error_message": "java.lang.IllegalMonitorStateException\n\tat java.lang.Object.wait(Native Method)\n\tat com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps.Login(RetailUpskillSteps.java:52)\n\tat com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps$ByteBuddy$xWj77Xr8.Login$accessor$I4Ip0hEH(Unknown Source)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)\n\tat net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)\n\tat com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps$ByteBuddy$xWj77Xr8.Login(Unknown Source)\n\tat com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(RetailUpskillSetpDefination.java:36)\n\tat ✽.I perform \"Login\" to the website(file:///Users/riyaanghosh/git/RetailUp/features/RetailUpskill.feature:13)\n",
+              "duration": 152000000,
               "status": "failed"
             },
-            "line": 15,
-            "name": "I perform round way trip search",
+            "line": 13,
+            "name": "I perform \"Login\" to the website",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_perform_round_way_trip_search(io.cucumber.datatable.DataTable)"
+              "arguments": [
+                {
+                  "val": "\"Login\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(java.lang.String,io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "From",
-                  "Delhi"
+                  "User",
+                  "automationtvs6@gmail.com"
                 ]
               },
               {
                 "cells": [
-                  "To",
-                  "Bangalore"
+                  "password",
+                  "**milk123"
                 ]
               }
             ],
@@ -133,46 +143,32 @@
           },
           {
             "result": {
-              "duration": 3989900,
+              "duration": 5000000,
               "status": "skipped"
             },
-            "line": 18,
-            "name": "Search results should display for round trip",
+            "line": 16,
+            "name": "My Account page should get displayed",
             "match": {
-              "location": "com.serenity.stepDefinations.makemytrip.makemytripStepDefination.Search_results_should_display_round(io.cucumber.datatable.DataTable)"
+              "location": "com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.my_account_page_should_get_displayed()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "From",
-                  "Delhi"
-                ]
-              },
-              {
-                "cells": [
-                  "To",
-                  "Bangalore"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tripsearch"
+            "name": "@retupskill"
           }
         ]
       }
     ],
-    "name": "Make my trip Search",
+    "name": "Retail Upskill Register and login",
     "description": "",
-    "id": "make-my-trip-search",
+    "id": "retail-upskill-register-and-login",
     "keyword": "Feature",
-    "uri": "file:features/MakeMyTrip.feature",
+    "uri": "file:features/RetailUpskill.feature",
     "tags": [
       {
-        "name": "@tripsearch",
+        "name": "@retupskill",
         "type": "Tag",
         "location": {
           "line": 1,

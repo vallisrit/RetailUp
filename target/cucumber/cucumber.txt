@@ -1,89 +1,31 @@
 
-@tripsearch
-Scenario: Search One Way Trip on Make My Trip         [90m# features/MakeMyTrip.feature:4[0m
-  [32mGiven [0m[32mI am on Make my trip[0m                          [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_am_on_make_my_trip()[0m
-  [31mWhen [0m[31mI perform one way trip search[0m                  [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.I_perform_one_way_trip(io.cucumber.datatable.DataTable)[0m
-      [31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li data-cy="oneWayTrip" class="selected">...</li> is not clickable at point (75, 183). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
-  (Session info: chrome=96.0.4664.45)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-3C821FM5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\VALLIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 076dd68c5a315a53a554e553e90e097c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps.searchOneWay(FlightsearchSteps.java:22)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchOneWay$accessor$yKhjQoGf(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchOneWay(Unknown Source)
-	at com.serenity.stepDefinations.makemytrip.makemytripStepDefination.I_perform_one_way_trip(makemytripStepDefination.java:31)
-	at ✽.I perform one way trip search(file:///C:/Users/VallisriTolety/git/Serenity-template/features/MakeMyTrip.feature:6)
+@retupskill
+Scenario: Retail Upskill Register               [90m# features/RetailUpskill.feature:4[0m
+  [32mGiven [0m[32mI am on [0m[32m[1m" http://retailm1.upskills.in/"[0m [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_am_on_url(java.lang.String)[0m
+  [32mWhen [0m[32mI perform [0m[32m[1m"Register"[0m[32m to the website[0m      [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(java.lang.String,io.cucumber.datatable.DataTable)[0m
+  [31mThen [0m[31mI successfully registerd[0m                 [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_successfully_registerd()[0m
+      [31mjava.lang.AssertionError: expected:<false> but was:<true>
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:468)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:230)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:240)
+	at com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_successfully_registerd(RetailUpskillSetpDefination.java:45)
+	at ✽.I successfully registerd(file:///Users/riyaanghosh/git/RetailUp/features/RetailUpskill.feature:9)
 [0m
-  [36mThen [0m[36mSearch results should display for one way trip[0m [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.Search_results_should_display_one_way(io.cucumber.datatable.DataTable)[0m
 
-@tripsearch
-Scenario: Search round Way Trip on Make My Trip     [90m# features/MakeMyTrip.feature:13[0m
-  [32mGiven [0m[32mI am on Make my trip[0m                        [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_am_on_make_my_trip()[0m
-  [31mWhen [0m[31mI perform round way trip search[0m              [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_perform_round_way_trip_search(io.cucumber.datatable.DataTable)[0m
-      [31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li data-cy="roundTrip" class="">...</li> is not clickable at point (198, 183). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
-  (Session info: chrome=96.0.4664.45)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-3C821FM5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\VALLIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 78342da7a315b1f537299110eb32bf13
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps.searchRoundTrip(FlightsearchSteps.java:35)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchRoundTrip$accessor$yKhjQoGf(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+@retupskill
+Scenario: Retail Upskill Login                  [90m# features/RetailUpskill.feature:11[0m
+  [32mGiven [0m[32mI am on [0m[32m[1m" http://retailm1.upskills.in/"[0m [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_am_on_url(java.lang.String)[0m
+  [31mWhen [0m[31mI perform [0m[31m[1m"Login"[0m[31m to the website[0m         [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(java.lang.String,io.cucumber.datatable.DataTable)[0m
+      [31mjava.lang.IllegalMonitorStateException
+	at java.lang.Object.wait(Native Method)
+	at com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps.Login(RetailUpskillSteps.java:52)
+	at com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps$ByteBuddy$xWj77Xr8.Login$accessor$I4Ip0hEH(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
 	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
@@ -91,8 +33,8 @@ Session ID: 78342da7a315b1f537299110eb32bf13
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.serenity.steps.flightbookingStep.FlightsearchSteps$ByteBuddy$dmojTI1v.searchRoundTrip(Unknown Source)
-	at com.serenity.stepDefinations.makemytrip.makemytripStepDefination.i_perform_round_way_trip_search(makemytripStepDefination.java:53)
-	at ✽.I perform round way trip search(file:///C:/Users/VallisriTolety/git/Serenity-template/features/MakeMyTrip.feature:15)
+	at com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps$ByteBuddy$xWj77Xr8.Login(Unknown Source)
+	at com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.i_perform_to_the_website(RetailUpskillSetpDefination.java:36)
+	at ✽.I perform "Login" to the website(file:///Users/riyaanghosh/git/RetailUp/features/RetailUpskill.feature:13)
 [0m
-  [36mThen [0m[36mSearch results should display for round trip[0m [90m# com.serenity.stepDefinations.makemytrip.makemytripStepDefination.Search_results_should_display_round(io.cucumber.datatable.DataTable)[0m
+  [36mThen [0m[36mMy Account page should get displayed[0m     [90m# com.serenity.stepDefinations.RetailUpskill.RetailUpskillSetpDefination.my_account_page_should_get_displayed()[0m
