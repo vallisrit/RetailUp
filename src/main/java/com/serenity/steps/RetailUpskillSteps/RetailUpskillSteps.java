@@ -20,6 +20,7 @@ public class RetailUpskillSteps extends CommonStep {
 	@Step
 	public void Register(String userid, String password) throws InterruptedException {
 		System.out.println("registration in progress");
+		
 		//fb.wait(100);
 		fb.accounticon.click();
 		System.out.println("after click");
@@ -28,7 +29,7 @@ public class RetailUpskillSteps extends CommonStep {
 		fb.registerbtn.waitUntilClickable().click();
 		//fb.wait(3);
 		System.out.println("registration page");
-		fb.firstname.sendKeys(userid);
+		fb.firstname.waitUntilVisible().sendKeys(userid);
 		fb.lastname.sendKeys(userid);
 		fb.email.sendKeys(userid);
 		fb.telephone.sendKeys("999999999");
