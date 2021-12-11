@@ -67,8 +67,12 @@ public class RetailUpskillPage extends Page{
 	
 	@FindBy(xpath = "//p[contains(text(),'Congratulations')]")
 	public WebElementFacade congratulations;
+
+	@FindBy(xpath = "//a[contains(@href,'logout')]//span[contains(text(),'LOGOUT')]")
+	public WebElementFacade logoutbtn;
 	
-	
+	@FindBy(xpath = "//h2[text()='My Account']")
+	public WebElementFacade myaccount;
 	
 
 

@@ -35,10 +35,14 @@ public class RetailUpskillSteps extends CommonStep {
 		fb.telephone.sendKeys("999999999");
 		fb.address1.sendKeys(userid);
 		fb.address2.sendKeys(userid);
-		fb.city.sendKeys(userid);
+		fb.city.sendKeys("Blr");
 		fb.postcode.sendKeys("560103");
-		fb.country.sendKeys("India");
+		//fb.country.sendKeys("India");
+		//fb.wait(50000);
+		System.out.println("after postcode");
+		//fb.region.selectByIndex(12);
 		fb.region.sendKeys("Karnataka");
+		//fb.region.selectByValue("Kerala");
 		fb.password.sendKeys(password);
 		fb.confirmpwd.sendKeys(password);
 		fb.policychk.click();
@@ -71,8 +75,18 @@ public class RetailUpskillSteps extends CommonStep {
 	@Step
 	public Object loginsuccess() throws InterruptedException {
 		//fb.wait(3);
-		boolean login= fb.congratulations.isVisible();
+		boolean login= fb.myaccount.isVisible();
 		return login;
+	}
+	@Step
+	public void Logout() throws InterruptedException {
+		
+		//fb.wait(100);
+		fb.getDriver().close();
+				
+				
+				//fb.wait(3);
+		
 	}
 
 }

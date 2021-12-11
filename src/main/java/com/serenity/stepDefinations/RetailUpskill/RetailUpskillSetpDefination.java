@@ -5,6 +5,8 @@ import static org.testng.AssertJUnit.assertEquals;
 import java.util.Map;
 
 import com.serenity.steps.RetailUpskillSteps.RetailUpskillSteps;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,11 +33,17 @@ public class RetailUpskillSetpDefination {
 			System.out.println("before registration");
 			russtep.Register(userid, password);
 
-		} else {
+		} else{
 			System.out.println("before login");
 			russtep.Login(userid, password);
 
-		}
+		} 
+
+	}
+	@And("I perform Logout")
+	public void i_perform_Logout() throws InterruptedException {
+		System.out.println("before logout");
+		russtep.Logout();
 
 	}
 
